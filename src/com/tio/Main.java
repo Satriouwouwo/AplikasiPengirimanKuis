@@ -164,9 +164,35 @@ public class Main extends javax.swing.JFrame {
 
         jLabel24.setText(":");
 
+        panjangBrgPengirimanTextField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                panjangBrgPengirimanTextFieldKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                panjangBrgPengirimanTextFieldKeyTyped(evt);
+            }
+        });
+
+        lebarBrgPengirimanTextField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                lebarBrgPengirimanTextFieldKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                lebarBrgPengirimanTextFieldKeyTyped(evt);
+            }
+        });
+
         tinggiBrgPengirimanTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tinggiBrgPengirimanTextFieldActionPerformed(evt);
+            }
+        });
+        tinggiBrgPengirimanTextField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                tinggiBrgPengirimanTextFieldKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tinggiBrgPengirimanTextFieldKeyTyped(evt);
             }
         });
 
@@ -179,6 +205,15 @@ public class Main extends javax.swing.JFrame {
         jLabel27.setText("Harga Barang");
 
         jLabel28.setText("Pembayaran");
+
+        hargaBrgPengirimanTextField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                hargaBrgPengirimanTextFieldKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                hargaBrgPengirimanTextFieldKeyTyped(evt);
+            }
+        });
 
         cashPengirimanRadioButton.setText("Cash");
         cashPengirimanRadioButton.addActionListener(new java.awt.event.ActionListener() {
@@ -230,6 +265,15 @@ public class Main extends javax.swing.JFrame {
         koTuPengirimanTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 koTuPengirimanTextFieldActionPerformed(evt);
+            }
+        });
+
+        beratBarangPengirimanTextField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                beratBarangPengirimanTextFieldKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                beratBarangPengirimanTextFieldKeyTyped(evt);
             }
         });
 
@@ -578,6 +622,14 @@ public class Main extends javax.swing.JFrame {
                 telpPenerimaTextFieldActionPerformed(evt);
             }
         });
+        telpPenerimaTextField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                telpPenerimaTextFieldKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                telpPenerimaTextFieldKeyTyped(evt);
+            }
+        });
 
         jLabel14.setText("Provinsi");
 
@@ -593,6 +645,29 @@ public class Main extends javax.swing.JFrame {
         });
 
         jLabel10.setText("Kode Pos");
+
+        kodePosPenerimaTextField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                kodePosPenerimaTextFieldKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                kodePosPenerimaTextFieldKeyTyped(evt);
+            }
+        });
+
+        kodePosPengirimTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kodePosPengirimTextFieldActionPerformed(evt);
+            }
+        });
+        kodePosPengirimTextField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                kodePosPengirimTextFieldKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                kodePosPengirimTextFieldKeyTyped(evt);
+            }
+        });
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -742,7 +817,7 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -931,7 +1006,7 @@ public class Main extends javax.swing.JFrame {
         {            
             
             evt.consume();
-            JOptionPane.showMessageDialog(rootPane, "s");
+            JOptionPane.showMessageDialog(rootPane, "Harus Angka");
         }
         
     }//GEN-LAST:event_telpPengirimTextFieldKeyTyped
@@ -983,6 +1058,134 @@ public class Main extends javax.swing.JFrame {
     private void telpPengirimTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telpPengirimTextFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_telpPengirimTextFieldActionPerformed
+
+    private void kodePosPengirimTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kodePosPengirimTextFieldActionPerformed
+      
+    }//GEN-LAST:event_kodePosPengirimTextFieldActionPerformed
+
+    private void kodePosPengirimTextFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_kodePosPengirimTextFieldKeyPressed
+    
+        
+    }//GEN-LAST:event_kodePosPengirimTextFieldKeyPressed
+
+    private void kodePosPenerimaTextFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_kodePosPenerimaTextFieldKeyPressed
+ 
+    }//GEN-LAST:event_kodePosPenerimaTextFieldKeyPressed
+
+    private void telpPenerimaTextFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_telpPenerimaTextFieldKeyPressed
+ 
+    }//GEN-LAST:event_telpPenerimaTextFieldKeyPressed
+
+    private void beratBarangPengirimanTextFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_beratBarangPengirimanTextFieldKeyPressed
+        // TODO add your handling code here:
+     
+    }//GEN-LAST:event_beratBarangPengirimanTextFieldKeyPressed
+
+    private void panjangBrgPengirimanTextFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_panjangBrgPengirimanTextFieldKeyPressed
+        // TODO add your handling code here:
+      
+    }//GEN-LAST:event_panjangBrgPengirimanTextFieldKeyPressed
+
+    private void lebarBrgPengirimanTextFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_lebarBrgPengirimanTextFieldKeyPressed
+ 
+    }//GEN-LAST:event_lebarBrgPengirimanTextFieldKeyPressed
+
+    private void tinggiBrgPengirimanTextFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tinggiBrgPengirimanTextFieldKeyPressed
+        // TODO add your handling code here:
+     
+    }//GEN-LAST:event_tinggiBrgPengirimanTextFieldKeyPressed
+
+    private void hargaBrgPengirimanTextFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_hargaBrgPengirimanTextFieldKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hargaBrgPengirimanTextFieldKeyPressed
+
+    private void kodePosPengirimTextFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_kodePosPengirimTextFieldKeyTyped
+        // TODO add your handling code here:
+        char enter=evt.getKeyChar() ;
+        
+        if(!(Character.isDigit(enter) || enter == KeyEvent.VK_BACKSPACE))
+        {            
+            
+            evt.consume();
+            JOptionPane.showMessageDialog(rootPane, "Harus Angka");
+        }
+    }//GEN-LAST:event_kodePosPengirimTextFieldKeyTyped
+
+    private void kodePosPenerimaTextFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_kodePosPenerimaTextFieldKeyTyped
+        // TODO add your handling code here:
+        char enter=evt.getKeyChar() ;
+        
+        if(!(Character.isDigit(enter) || enter == KeyEvent.VK_BACKSPACE))
+        {            
+            
+            evt.consume();
+            JOptionPane.showMessageDialog(rootPane, "Harus Angka");
+        }
+    }//GEN-LAST:event_kodePosPenerimaTextFieldKeyTyped
+
+    private void telpPenerimaTextFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_telpPenerimaTextFieldKeyTyped
+        // TODO add your handling code here:
+        char enter=evt.getKeyChar() ;
+        
+        if(!(Character.isDigit(enter) || enter == KeyEvent.VK_BACKSPACE))
+        {            
+            
+            evt.consume();
+            JOptionPane.showMessageDialog(rootPane, "Harus Angka");
+        }
+    }//GEN-LAST:event_telpPenerimaTextFieldKeyTyped
+
+    private void beratBarangPengirimanTextFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_beratBarangPengirimanTextFieldKeyTyped
+        // TODO add your handling code here:
+        char enter=evt.getKeyChar() ;
+        
+        if(!(Character.isDigit(enter) || enter == KeyEvent.VK_BACKSPACE))
+        {            
+            
+            evt.consume();
+            JOptionPane.showMessageDialog(rootPane, "Harus Angka");
+        }
+    }//GEN-LAST:event_beratBarangPengirimanTextFieldKeyTyped
+
+    private void panjangBrgPengirimanTextFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_panjangBrgPengirimanTextFieldKeyTyped
+        // TODO add your handling code here:
+        char enter=evt.getKeyChar() ;
+        
+        if(!(Character.isDigit(enter) || enter == KeyEvent.VK_BACKSPACE))
+        {            
+            
+            evt.consume();
+            JOptionPane.showMessageDialog(rootPane, "Harus Angka");
+        }
+    }//GEN-LAST:event_panjangBrgPengirimanTextFieldKeyTyped
+
+    private void lebarBrgPengirimanTextFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_lebarBrgPengirimanTextFieldKeyTyped
+        // TODO add your handling code here:
+        char enter=evt.getKeyChar() ;
+        
+        if(!(Character.isDigit(enter) || enter == KeyEvent.VK_BACKSPACE))
+        {            
+            
+            evt.consume();
+            JOptionPane.showMessageDialog(rootPane, "Harus Angka");
+        }
+    }//GEN-LAST:event_lebarBrgPengirimanTextFieldKeyTyped
+
+    private void tinggiBrgPengirimanTextFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tinggiBrgPengirimanTextFieldKeyTyped
+        // TODO add your handling code here:
+        char enter=evt.getKeyChar() ;
+        
+        if(!(Character.isDigit(enter) || enter == KeyEvent.VK_BACKSPACE))
+        {            
+            
+            evt.consume();
+            JOptionPane.showMessageDialog(rootPane, "Harus Angka");
+        }
+    }//GEN-LAST:event_tinggiBrgPengirimanTextFieldKeyTyped
+
+    private void hargaBrgPengirimanTextFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_hargaBrgPengirimanTextFieldKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hargaBrgPengirimanTextFieldKeyTyped
 
     /**
      * @param args the command line arguments
