@@ -39,9 +39,10 @@ public class Main extends javax.swing.JFrame {
             tglPengirimanLabel.setVisible(false);
             hasilNomorPaketLabel.setVisible(false);
             nomorPaketPengirimanTextField.setEnabled(false);
+            lamaPengirimanLabel.setVisible(false);
             
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -104,6 +105,8 @@ public class Main extends javax.swing.JFrame {
         tglPengirimanLabel = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
         hasilNomorPaketLabel = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        lamaPengirimanLabel = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
@@ -139,6 +142,8 @@ public class Main extends javax.swing.JFrame {
         kotaPengirimComboBox = new javax.swing.JComboBox<>();
         kotaPenerimaComboBox = new javax.swing.JComboBox<>();
         jSeparator1 = new javax.swing.JSeparator();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        ukaUkaTextArea = new javax.swing.JTextArea();
 
         jTextField1.setText("jTextField1");
 
@@ -336,6 +341,10 @@ public class Main extends javax.swing.JFrame {
 
         hasilNomorPaketLabel.setText("jLabel45");
 
+        jLabel45.setText("LAMA PENGIRIMAN");
+
+        lamaPengirimanLabel.setText("jLabel46");
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -343,29 +352,29 @@ public class Main extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel33)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel40)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(hargaPengirimanLabel))
+                    .addComponent(jLabel42)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel43)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(hargaAsuransiLabel))
+                    .addComponent(jLabel29)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(totalBayayLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(HargaTotalLabel))
-                    .addComponent(jLabel29)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel33)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel40)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(hargaPengirimanLabel))
-                            .addComponent(jLabel42)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel43)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(hargaAsuransiLabel)))
-                        .addGap(85, 85, 85)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(hasilNomorPaketLabel)
-                            .addComponent(jLabel44)
-                            .addComponent(tglPengirimanLabel)
-                            .addComponent(jLabel41))))
+                        .addComponent(HargaTotalLabel)))
+                .addGap(40, 40, 40)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lamaPengirimanLabel)
+                    .addComponent(jLabel45)
+                    .addComponent(hasilNomorPaketLabel)
+                    .addComponent(jLabel44)
+                    .addComponent(tglPengirimanLabel)
+                    .addComponent(jLabel41))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
@@ -390,11 +399,14 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jLabel43)
                     .addComponent(hasilNomorPaketLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                .addComponent(jLabel29)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel29)
+                    .addComponent(jLabel45))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(HargaTotalLabel)
-                    .addComponent(totalBayayLabel)))
+                    .addComponent(totalBayayLabel)
+                    .addComponent(lamaPengirimanLabel)))
         );
 
         jLabel37.setText(":");
@@ -846,6 +858,20 @@ public class Main extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        ukaUkaTextArea.setBackground(new java.awt.Color(0, 0, 0));
+        ukaUkaTextArea.setColumns(20);
+        ukaUkaTextArea.setFont(new java.awt.Font("Monospaced", 0, 36)); // NOI18N
+        ukaUkaTextArea.setForeground(new java.awt.Color(0, 204, 51));
+        ukaUkaTextArea.setLineWrap(true);
+        ukaUkaTextArea.setRows(5);
+        ukaUkaTextArea.setText("\n   SELAMAT \n    NATAl\n     \n     DAN\n\n TAHUN BARU\n    2018\n\nTim Uka-Uka\n  Express");
+        ukaUkaTextArea.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                ukaUkaTextAreaMousePressed(evt);
+            }
+        });
+        jScrollPane3.setViewportView(ukaUkaTextArea);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -855,15 +881,17 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 296, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING)))
         );
 
         pack();
@@ -930,6 +958,7 @@ public class Main extends javax.swing.JFrame {
             hargaPengirimanLabel.setText(""+df.format(datapengiriman.getHargaAwalKaliBerat()));
             hargaAsuransiLabel.setText(""+df.format(datapengiriman.getNilaiasuransi()));
             tglPengirimanLabel.setText(""+sdf.format(datapengiriman.getTanggalkirim()));
+            lamaPengirimanLabel.setText("3-4 Hari");
          
             
             
@@ -938,7 +967,7 @@ public class Main extends javax.swing.JFrame {
             hargaAsuransiLabel.setVisible(true);
             tglPengirimanLabel.setVisible(true);
             hasilNomorPaketLabel.setVisible(true);
-        }
+            lamaPengirimanLabel.setVisible(true);        }
         
         else if (jenisLayananPengirimanComboBox.getSelectedItem().toString().equalsIgnoreCase("KILAT")){
             datapengiriman.setNilaiasuransi();
@@ -950,12 +979,14 @@ public class Main extends javax.swing.JFrame {
             hargaPengirimanLabel.setText(""+df.format(datapengiriman.getHargaAwalKaliBerat()));
             hargaAsuransiLabel.setText(""+df.format(datapengiriman.getNilaiasuransi()));
             tglPengirimanLabel.setText(""+sdf.format(datapengiriman.getTanggalkirim()));
+              lamaPengirimanLabel.setText("1-2 Hari");
             
         HargaTotalLabel.setVisible(true);
             hargaPengirimanLabel.setVisible(true);
             hargaAsuransiLabel.setVisible(true);
             tglPengirimanLabel.setVisible(true);
             hasilNomorPaketLabel.setVisible(true);
+         lamaPengirimanLabel.setVisible(true);
         }
         
         else if (jenisLayananPengirimanComboBox.getSelectedItem().toString().equalsIgnoreCase("SDS")){
@@ -968,12 +999,14 @@ public class Main extends javax.swing.JFrame {
             hargaPengirimanLabel.setText(""+df.format(datapengiriman.getHargaAwalKaliBerat()));
             hargaAsuransiLabel.setText(""+df.format(datapengiriman.getNilaiasuransi()));
             tglPengirimanLabel.setText(""+sdf.format(datapengiriman.getTanggalkirim()));
+              lamaPengirimanLabel.setText("Same Day Service, Sampai pada hari yang sama");
             
         HargaTotalLabel.setVisible(true);
             hargaPengirimanLabel.setVisible(true);
             hargaAsuransiLabel.setVisible(true);
             tglPengirimanLabel.setVisible(true);
             hasilNomorPaketLabel.setVisible(true);
+          lamaPengirimanLabel.setVisible(true);
             
         }
         
@@ -987,12 +1020,14 @@ public class Main extends javax.swing.JFrame {
             hargaPengirimanLabel.setText(""+df.format(datapengiriman.getHargaAwalKaliBerat()));
             hargaAsuransiLabel.setText(""+df.format(datapengiriman.getNilaiasuransi()));
             tglPengirimanLabel.setText(""+sdf.format(datapengiriman.getTanggalkirim()));
+              lamaPengirimanLabel.setText("One Night Service, Sampai besok pagi");
             
         HargaTotalLabel.setVisible(true);
             hargaPengirimanLabel.setVisible(true);
             hargaAsuransiLabel.setVisible(true);
             tglPengirimanLabel.setVisible(true);
             hasilNomorPaketLabel.setVisible(true);
+            lamaPengirimanLabel.setVisible(true);
         }
         
         
@@ -1006,15 +1041,20 @@ public class Main extends javax.swing.JFrame {
             hargaPengirimanLabel.setText(""+df.format(datapengiriman.getHargaAwalKaliBerat()));
             hargaAsuransiLabel.setText(""+df.format(datapengiriman.getNilaiasuransi()));
             tglPengirimanLabel.setText(""+sdf.format(datapengiriman.getTanggalkirim()));
+              lamaPengirimanLabel.setText("Holiday Service, Pengiriman di hari libur");
+              lamaPengirimanLabel.setVisible(true);
             
         HargaTotalLabel.setVisible(true);
             hargaPengirimanLabel.setVisible(true);
             hargaAsuransiLabel.setVisible(true);
             tglPengirimanLabel.setVisible(true);
             hasilNomorPaketLabel.setVisible(true);
+ 
         }
        }catch(Exception e){
            JOptionPane.showMessageDialog(rootPane, "DATA TIDAK BOLEH KOSONG");
+           hasilNomorPaketLabel.setVisible(false);
+           
        }
        nomorPaketPengirimanTextField.setText(DataPengiriman.getRandom());
        hasilNomorPaketLabel.setText(nomorPaketPengirimanTextField.getText());
@@ -1079,6 +1119,7 @@ public class Main extends javax.swing.JFrame {
     private void asuransiYaPengirimanRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_asuransiYaPengirimanRadioButtonActionPerformed
          asuransiNoPengirimanRadioButton.setSelected(false);
          hargaBrgPengirimanTextField.setEnabled(true);
+ 
     }//GEN-LAST:event_asuransiYaPengirimanRadioButtonActionPerformed
 
     private void asuransiNoPengirimanRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_asuransiNoPengirimanRadioButtonActionPerformed
@@ -1273,7 +1314,8 @@ public class Main extends javax.swing.JFrame {
         tglPengirimanLabel.setText("");
         hasilNomorPaketLabel.setText("");
         kirimButton.setEnabled(true);
-        
+        ukaUkaTextArea.setEnabled(true);
+        lamaPengirimanLabel.setVisible(false);
     }//GEN-LAST:event_clearButtonActionPerformed
 
     private void jenisLayananPengirimanComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jenisLayananPengirimanComboBoxActionPerformed
@@ -1287,8 +1329,15 @@ public class Main extends javax.swing.JFrame {
         if(!(Character.isDigit(enter) || enter == KeyEvent.VK_BACKSPACE)){
             evt.consume();
             JOptionPane.showMessageDialog(rootPane,"Harus Angka");
+            
         }
     }//GEN-LAST:event_nomorPaketPengirimanTextFieldKeyTyped
+
+    private void ukaUkaTextAreaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ukaUkaTextAreaMousePressed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "JANGAN CLICK-CLICK !!!");
+        ukaUkaTextArea.setEnabled(false);
+    }//GEN-LAST:event_ukaUkaTextAreaMousePressed
 
     /**
      * @param args the command line arguments
@@ -1380,6 +1429,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -1392,6 +1442,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jenisBrgPengirimanTextField;
@@ -1402,6 +1453,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField kodePosPengirimTextField;
     private javax.swing.JComboBox<String> kotaPenerimaComboBox;
     private javax.swing.JComboBox<String> kotaPengirimComboBox;
+    private javax.swing.JLabel lamaPengirimanLabel;
     private javax.swing.JTextField lebarBrgPengirimanTextField;
     private javax.swing.JTextField namaPenerimaTextField;
     private javax.swing.JTextField nomorPaketPengirimanTextField;
@@ -1414,5 +1466,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel tglPengirimanLabel;
     private javax.swing.JTextField tinggiBrgPengirimanTextField;
     private javax.swing.JLabel totalBayayLabel;
+    private javax.swing.JTextArea ukaUkaTextArea;
     // End of variables declaration//GEN-END:variables
 }
