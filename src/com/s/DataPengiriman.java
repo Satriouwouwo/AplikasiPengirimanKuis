@@ -31,6 +31,7 @@ public class DataPengiriman {
     private double nilaiasuransi;
     
     
+    
 
     public DataPengiriman() {
     }
@@ -83,6 +84,17 @@ public class DataPengiriman {
                 if(this.getKotatujuan().equalsIgnoreCase(tarifile.getKota()))
                     setHargaAwal(tarifile.getHds());
                     }
+        }
+            
+        public static String getRandom(){
+        String nopaket = "";
+        int random  =(int) (Math.ceil(Math.random()*100));
+     
+        //nomorpaket = (int)ceil;
+         
+        nopaket+=random;
+        //return nomorpaket;
+        return nopaket;
         }
     
         
